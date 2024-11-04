@@ -1,29 +1,5 @@
-# Diretório de estado do Terraform
-.terraform/
 
-# Arquivo de estado do Terraform, que pode conter informações sensíveis
-terraform.tfstate
-terraform.tfstate.backup
-
-# Arquivos de log de execução do Terraform
-crash.log
-
-# Overrides e arquivos locais que podem conter dados específicos do ambiente
+*.tfstate
+*.tfstate.*
 *.tfvars
-*.tfvars.json
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Arquivos de saída do plano do Terraform
-*.tfplan
-
-# Arquivos de bloqueio de provedores, mantêm as versões específicas
-.terraform.lock.hcl
-
-# Configurações do Terraform para backend remoto, que podem conter chaves e configurações de autenticação
-terraform.rc
-
-# Logs de execução
-.terraformrc
+**/.terraform/*

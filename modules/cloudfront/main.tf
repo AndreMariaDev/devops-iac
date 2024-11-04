@@ -41,6 +41,6 @@ resource "aws_cloudfront_distribution" "cloudfront" {
     cloudfront_default_certificate = true
   }
 
-  price_class = "PriceClass_200"
+  price_class = "${var.cdn_price_class}"
 
 }
